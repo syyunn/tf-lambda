@@ -23,6 +23,8 @@ service: tf-lambda
 provider:
   name: aws
   runtime: python3.7
+  region: us-east-1
+  stage: dev
 
 # you can overwrite defaults here
 #  stage: dev
