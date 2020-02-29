@@ -10,7 +10,6 @@ curl -o- -L https://slss.io/install | bash
 # Restart your zsh
 exec zsh
 ```
-- [ ] Globally Install Serverless 
 
 
 [tf]: https://www.tensorflow.org/
