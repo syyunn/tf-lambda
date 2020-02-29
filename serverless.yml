@@ -76,6 +76,7 @@ provider:
 functions:
   infer:
     handler: infer.forward
+    memorySize: 3008
     timeout: 900 # Timeout – The amount of time that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds.
     events:
       - http:
