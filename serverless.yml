@@ -26,6 +26,20 @@ provider:
   region: us-east-1
   stage: dev
 
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource:
+       Fn::Join:
+         - ""
+         - - "arn:aws:s3:::"
+           - ${self:provider.environment.BUCKET}
+           - "/*"
+
+  environment:
+    BUCKET: tf-lambda
+
 # you can overwrite defaults here
 #  stage: dev
 #  region: us-east-1
