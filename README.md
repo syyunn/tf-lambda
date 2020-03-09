@@ -11,6 +11,8 @@ curl -o- -L https://slss.io/install | bash
 exec zsh
 ```
 
+## Lambda Infos
+- [ ] Limits [https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html]
 
 [tf]: https://www.tensorflow.org/
 [AWS Lambda]: https://aws.amazon.com/lambda/
